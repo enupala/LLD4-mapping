@@ -14,6 +14,6 @@ public class Laptop {
     private Long id;
     private String name;
     private String brand;
-    @OneToOne(mappedBy="laptop")
+    @OneToOne
         Student st;
 }
