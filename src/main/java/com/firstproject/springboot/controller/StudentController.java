@@ -2,6 +2,7 @@ package com.firstproject.springboot.controller;
 
 import com.firstproject.springboot.dto.PspAndBrand;
 import com.firstproject.springboot.dto.PspAndName;
+import com.firstproject.springboot.models.Student;
 import com.firstproject.springboot.repositories.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

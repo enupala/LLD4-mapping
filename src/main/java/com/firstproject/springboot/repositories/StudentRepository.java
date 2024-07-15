@@ -16,8 +16,8 @@ public interface StudentRepository extends JpaRepository<Student,Long> {
     @Query(value = "select psp,name from student", nativeQuery = true)
     List<PspAndName> findStudentPspAndName();
 
-    @Query(value = "select s.psp as psp,l.brand as brand from Student s join " +
-            "Laptop l ON s.id=l.st_id ",
+    @Query(value = "select s.psp as psp,l.brand as brand from " +
+            "Student s join Laptop l ON s.id=l.st_id ",
             nativeQuery = true)
     List<PspAndBrand> findStudentPspAndBrand();
 }
